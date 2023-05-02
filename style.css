@@ -33,15 +33,65 @@ ul {
 .header {
     background-color: aqua;
     display: grid;
-    grid-template: 50px 110px / 1fr 1fr;
+    grid-template: 50px 110px / 70% 30%;
+}
+
+#search {
+    width: 75%;
+    height: 30px;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid darkgray;
+    align-self: center;
+    margin-left: 5rem;
 }
 
 .header-icons {
     grid-row: 1;
     grid-column: 2;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(3, max-content);
+    margin-left: auto;
+    margin-right: 4rem;
+    gap: 4rem;
+    align-items: center;
+}
+
+.welcome {
+    display: grid;
+    grid-template: auto auto / 40px auto;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.welcome-img {
+    grid-row: 1 / 3;
+    align-self: center;
+}
+
+.welcome-img + p {
+    align-self: flex-end;
+}
+
+.welcome-name {
+    align-self: flex-start;
+}
+
+.btns {
+    display: grid;
+    grid-template: 100% / repeat(3, 7rem);
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+}
+
+.btns > * {
+    height: 3rem;
+    border-radius: 8px;
+    outline: 0;
+    border: 2px solid white;
+    background-color: royalblue;
+    color: white;
 }
 
 .body {
