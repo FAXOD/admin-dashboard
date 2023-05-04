@@ -97,3 +97,21 @@ ul {
 .body {
     background-color: lightgray;
 }
+
+.body-lhs {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(4, 160px);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.body-lhs > h1 {
+    grid-column: 1 / -1;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+}
