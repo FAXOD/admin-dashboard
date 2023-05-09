@@ -86,7 +86,7 @@ li {
     align-items: center;
 }
 
-.header-icons > .user-icon {
+.header-icons > .profile-pic {
     height: 3rem;
 }
 
@@ -113,6 +113,11 @@ li {
 
 .welcome-name {
     align-self: flex-start;
+}
+
+.profile-pic {
+    border-radius: 50px;
+    border: solid 4px black;
 }
 
 .btns {
@@ -221,11 +226,13 @@ li {
 
 .announcement1 {
     align-self: end;
+    padding-bottom: 8px;
 }
 
 .announcement2 {
     border-top: 1px solid darkgray;
     border-bottom: 1px solid darkgray;
+    padding-bottom: 10px;
 }
 
 .announcement3 {
@@ -233,6 +240,29 @@ li {
 }
 
 .trending {
-border-radius: 10px;
-background-color: white;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.trend-content {
+    display: grid;
+    grid-template: repeat(4, 1fr) / auto;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.trend-card {
+    display: grid;
+    grid-template: 100% / 2.5rem auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trend-img {
+    height: 2.5rem;
+    width: 2.5em;
+    border-radius: 2.5rem;
 }
