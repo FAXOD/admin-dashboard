@@ -10,7 +10,7 @@ body {
 .container {
     display: grid;
     grid-template-rows: 160px calc(100vh - 160px);
-    grid-template-columns: minmax(230px, 18vw) auto;
+    grid-template-columns: minmax(290px, 18vw) auto;
 }
 
 .sidebar {
@@ -32,6 +32,9 @@ ul {
     margin-left: 50px;
     margin-top: 20px;
     font-size: 2.4rem;
+    display: grid;
+    grid-template: auto / 3rem auto;
+    align-items: center;
 }
 
 .logo > svg {
@@ -156,6 +159,27 @@ li {
     background-color: white;
     border-radius: 10px;
     border-left: 8px rgb(255, 238, 0) solid;
+    display: grid;
+    grid-template: 75% 20% / auto;
+    gap: 5%;
+}
+
+.card-content {
+    margin-left: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.card-btns > svg {
+    height: 2rem;
+}
+
+.card-btns {
+    justify-self: end;
+    margin-right: 1rem;
+    display: grid;
+    grid-template: auto / repeat(3, auto);
+    gap: 2rem;
 }
 
 .body-rhs {
@@ -177,6 +201,35 @@ li {
 .announce-cards {
     border-radius: 10px;
     background-color: white;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    align-items: center;
+}
+
+.announce-cards > div > h1 {
+    font-size: 1.6rem;
+}
+
+.announce-cards > div > p {
+    font-size: 0.9rem;
+}
+
+.announce-cards > div {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+.announcement1 {
+    align-self: end;
+}
+
+.announcement2 {
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+}
+
+.announcement3 {
+    align-self: start;
 }
 
 .trending {
