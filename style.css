@@ -3,13 +3,9 @@
     padding: 0;
 }
 
-body {
-    height: 100%;
-}
-
 .container {
     display: grid;
-    grid-template-rows: 160px calc(100vh - 160px);
+    grid-template-rows: 160px max(calc(100vh - 160px), 1520px);
     grid-template-columns: minmax(290px, 18vw) auto;
 }
 
@@ -148,8 +144,8 @@ li {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: 60px repeat(3, 1fr);
-    grid-auto-rows: 1fr;
+    grid-template-rows: 60px repeat(3, minmax(220px, 1fr));
+    grid-auto-rows: 220px;
     margin-left: 20px;
     height: calc(100% - 200px);
 }
